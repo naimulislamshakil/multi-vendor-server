@@ -18,7 +18,7 @@ mongoose
 	.then(() => console.log('Multi-Vendor Database Connected Successfully!'))
 	.catch((err) => console.log(err));
 
-app.use('/', UserRoute);
+app.use('/api', UserRoute);
 
 app.get('/', (req, res) => {
 	res.send('<h1>How are you?</h1>');
